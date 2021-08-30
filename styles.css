@@ -13,7 +13,7 @@ html,body{
 }
 /*Header*/
 header{
-    background: url(./image/banner4.jpeg), #041e44; 
+    background: url(./banner4.jpeg), #041e44; 
     background-size: cover;
     background-blend-mode: overlay;
     background-position-y: bottom;

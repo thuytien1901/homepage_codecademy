@@ -13,7 +13,7 @@ html,body{
 }
 /*Header*/
 header{
-    background: url(./banner4.jpeg), #041e44; 
+    background: url(./image/banner4.jpeg), #041e44; 
     background-size: cover;
     background-blend-mode: overlay;
     background-position-y: bottom;
@@ -26,7 +26,8 @@ header{
     height: 40px;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0.25rem;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
 
 
 }
@@ -114,9 +115,30 @@ h1{
         height: 100%;
         margin-right: 0;
     }
-
-
 }
+
+@media only screen and (max-width: 480px){
+
+    header{
+        height: 400px;
+    }
+    nav li:nth-child(-n+4){
+        display: none;
+    }
+
+    .banner h1{
+        font-size: 1.2rem;
+    }
+
+    .banner p{
+        font-size: 0.7rem;
+        margin: 1rem 3rem;
+    }
+
+    .banner a{
+        font-size: 0.8rem;
+    }
+    }
 
 
 /*Section*/
@@ -148,8 +170,6 @@ h2{
     line-height: 2;
 }
 
-
-
 .specific-field div{
     min-width: 70%;
 }
@@ -159,8 +179,8 @@ h5{
     text-align: left;
 }
 .specific-field img{
-    height: 40%;
-    margin: auto 0;
+    width: 20%;
+    margin: 20px 0;
 }
 .specific-field h4, .specific-field p{
     text-align: left;
@@ -206,6 +226,47 @@ h5{
     .p1{
         margin: 1rem;
     }
+}
+@media only screen and (max-width: 480px){
+    section{
+        margin: 2rem 1rem;
+    }
+    section h2{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    section p:first-of-type{
+        font-size: 0.7rem;
+        margin: 0 1rem;
+    }
+    .tech-fields{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .specific-field{
+        flex-direction: column;
+        justify-items: center;
+        width:100%;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 1rem 0;
+        
+    }
+    h5{
+        text-align: center;
+    }
+    .specific-field img{
+        width: 80px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .specific-field p{
+        text-align: center;
+        flex-shrink: 0;
+
+    }
+
 }
 /*Footer*/
 footer{
@@ -293,4 +354,28 @@ h6{
     .info ul{
         display: none;
     }
+}
+
+@media only screen and (max-width: 480px){
+    footer{
+        font-size: 0.8em;
+        margin-top: 4rem;
     }
+
+    .new2{
+        display: none;
+    }
+    .news-content{
+        margin: 1.5rem 2.5rem;
+    }
+    .new1 p, .news a{
+        font-size: 0.8em;
+
+    }
+    .info ul {
+        display: none;
+    }
+    h3{
+        font-size: 1.05rem;
+    }
+}
